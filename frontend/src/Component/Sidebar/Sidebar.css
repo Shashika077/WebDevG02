@@ -1,0 +1,75 @@
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .side-bar {
+    width: 120%;
+    min-height: 15vh;
+    border-top: 0;
+    background-color: rgb(218, 235, 229);
+    font-size: max(1vw, 18px);
+    margin-top: 2px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .side-bar-option {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center horizontally */
+    padding: 10px 0; /* Add vertical padding if needed */
+    text-decoration: none; /* Remove underline from text */
+    color: inherit; /* Ensure text color matches */
+  }
+  
+  .side-bar-option.active {
+    background-color: rgb(252, 252, 252);
+    border-color: tomato;
+    border-radius: 5px;
+  }
+  
+  .dash {
+    width: 80px;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .side-bar-text {
+    margin: 0; /* Remove default margin */
+    font-size: max(1vw, 18px); /* Match text size with sidebar */
+  }
+  .product{
+    width: 80px;
+    height: auto;
+  }
+  .Aj{
+    width: 80px;
+    height: auto;
+  }
+  .ex{
+    width: 80px;
+    height: auto;
+  }
+  /* Media Queries */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+  .side-bar {
+    font-size: max(2vw, 16px); /* Increased font size for better readability */
+  }
+
+  .dash, .product, .Aj, .ex {
+    width: 60px; /* Reduced size for smaller screens */
+  }
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .side-bar {
+    font-size: max(1.5vw, 18px); /* Adjusted font size for medium screens */
+  }
+
+  .dash, .product, .Aj, .ex {
+    width: 70px; /* Slightly reduced size for tablets */
+  }
+}
