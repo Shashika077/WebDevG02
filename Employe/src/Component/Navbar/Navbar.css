@@ -1,0 +1,208 @@
+/* Base styling for navbar and related elements */
+.navbar .nav-logo {
+  width: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 4%;
+  background-color: rgba(193, 209, 237, 0.818);
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu {
+  width: 40px;
+  height: 40px;
+  border: solid black;
+  border-radius: 50px;
+}
+
+.nav-r {
+  display: flex;
+  gap: 100px;
+  align-items: baseline;
+}
+
+.nav-l {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-button {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: 400;
+  border-radius: 15px;
+  border: solid 4px rgba(9, 1, 1, 0.885);
+  background-color: #edf0f0;
+  cursor: pointer;
+  width: 100px;
+  padding: 8px 4px;
+}
+
+.nav-button:hover {
+  background-color: aliceblue;
+}
+
+.nav-noti {
+  width: 35px;
+  cursor: pointer;
+}
+
+.nav-input {
+  margin-top: 30px;
+  padding-left: 40px;
+  width: 200px;
+  height: 10px;
+  border-radius: 15px;
+  border: solid 3px;
+}
+
+.nav-user-info {
+  border: solid 3px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 590px;
+  margin-top: 10px;
+  background-color: #edf0f0;
+}
+
+.nav-noti1 {
+  border: solid red;
+  margin-top: 10px;
+  width: 30px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 50px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.overlay-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.overlay-content ul li {
+  margin-bottom: 5px;
+}
+
+.overlay-content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.overlay-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 2%;
+  }
+
+  .nav-r {
+    gap: 60px; /* Reduce gap for medium screens */
+  }
+
+  .nav-l {
+    gap: 30px; /* Reduce gap for medium screens */
+  }
+
+  .nav-button {
+    width: 80px; /* Adjust button width */
+  }
+
+  .nav-input {
+    width: 150px; /* Adjust input width */
+  }
+
+  .nav-user-info {
+    margin-left: auto; /* Center the user-info section */
+    margin-right: 20px; /* Adjust right margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-r, .nav-l {
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 20px; /* Reduce gap for small screens */
+  }
+
+  .nav-button {
+    width: 70px; /* Adjust button width */
+  }
+
+  .nav-input {
+    width: 120px; /* Adjust input width */
+  }
+
+  .nav-user-info {
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px 2%; /* Reduce padding */
+  }
+
+  .nav-button {
+    width: 60px; /* Further reduce button width */
+  }
+
+  .nav-input {
+    width: 100px; /* Further reduce input width */
+  }
+
+  .nav-user-info {
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .nav-noti, .nav-noti1 {
+    width: 25px; /* Reduce size of notifications */
+  }
+}
