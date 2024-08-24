@@ -1,0 +1,166 @@
+/* Main container styles */
+.bill-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: rgb(152, 202, 220) solid;
+  }
+  
+  /* Form styles */
+  .bill-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .bill-form label {
+    width: 80px;
+    text-align: center;
+   
+  }
+  
+  .bill-form input[type="text"]{
+    padding: 8px;
+    font-size: 14px;
+    width: 150px;
+    margin-top: 17px;
+  }
+  .bill-form input[type="number"] {
+    margin-top: 7px;
+    padding: 9px;
+    font-size: 14px;
+    width: 150px;
+  }
+  
+  .bill-form .add-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bill-form .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Product details styles */
+  .product-details {
+    margin-bottom: 20px;
+  }
+  
+  .details-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  .details-table th,
+  .details-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .details-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Bill table styles */
+  .bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .bill-table th,
+  .bill-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .bill-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .bill-table td:last-child {
+    text-align: center;
+  }
+  
+  .bill-table .remove-button {
+    padding: 6px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bill-table .remove-button:hover {
+    background-color: #da190b;
+  }
+  
+  /* Total section styles */
+  .total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #005f6b;
+  }
+  @media (max-width: 768px) {
+    .bill-form {
+      flex-direction: column;
+    }
+  
+    .bill-form label {
+      width: 100%; /* Full width for smaller screens */
+      text-align: left;
+    }
+  
+    .bill-form input[type="text"],
+    .bill-form input[type="number"] {
+      width: calc(100% - 16px); /* Adjust width to account for padding */
+    }
+  
+    .details-table,
+    .bill-table {
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  
+    .submit-button,
+    .bill-form .add-button {
+      width: 100%; /* Full width buttons on small screens */
+      font-size: 14px; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bill-form input[type="text"],
+    .bill-form input[type="number"] {
+      font-size: 12px; /* Smaller font size */
+    }
+  
+    .total {
+      font-size: 16px; /* Smaller font size */
+    }
+  
+    .submit-button,
+    .bill-form .add-button {
+      font-size: 12px; /* Smaller font size */
+      padding: 8px; /* Adjust padding */
+    }
+  }
