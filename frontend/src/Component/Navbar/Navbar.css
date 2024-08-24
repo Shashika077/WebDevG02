@@ -1,0 +1,140 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4%;
+  background-color: rgba(193, 209, 237, 0.818);
+  border-radius: 25px 25px 0 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+.nav-l {
+  display: flex;
+  align-items: baseline;
+  gap: 80px;
+}
+
+.nav-menu {
+  width: 40px;
+  border: solid black;
+  border-radius: 50px;
+}
+
+.nav-button {
+  font-size: medium;
+  font-weight: 400;
+  border-radius: 15px;
+  border: solid 4px rgba(9, 1, 1, 0.885);
+  background-color: #edf0f0;
+  cursor: pointer;
+  width: 100px;
+  padding: 8px 4px;
+}
+
+.nav-button:hover {
+  background-color: aliceblue;
+}
+
+.nav-noti, .nav-noti1 {
+  width: 35px;
+  cursor: pointer;
+}
+
+.nav-search-container {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.nav-input {
+  width: 200px;
+  height: 12px;
+  border-radius: 15px;
+  border: solid 3px;
+  margin-top: 15px;
+}
+
+.nav-search {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 25px;
+}
+
+.nav-r {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-l {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nav-r {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nav-search-container {
+    margin-left: 0;
+    margin-top: 10px; /* Added top margin for spacing */
+  }
+
+  .nav-input {
+    width: 100%;
+    margin-top: 10px; /* Adjusted top margin */
+  }
+
+  .nav-menu {
+    width: 30px; /* Smaller menu icon for mobile */
+  }
+
+  .nav-button {
+    width: auto; /* Allow button to resize */
+    margin: 5px; /* Adjusted margin for better spacing */
+  }
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    padding: 10px 2%;
+  }
+
+  .nav-l {
+    gap: 40px; /* Reduced gap for medium screens */
+  }
+
+  .nav-r {
+    gap: 40px; /* Reduced gap for medium screens */
+  }
+
+  .nav-search-container {
+    margin-left: auto;
+    margin-right: 10px; /* Adjusted margin for medium screens */
+  }
+
+  .nav-input {
+    width: 150px; /* Adjusted width for medium screens */
+  }
+}
