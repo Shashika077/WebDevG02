@@ -1,38 +1,89 @@
-# WebDevG02
+# WebDevG02 - Modern Web Application
 
-This project is a web application built using React, PHP, and MySQL. To get started, follow the 
-instructions below to set up the development environment, configure the database, and run the project. 
-Prerequisites 
- XAMPP: A local server environment to run PHP and MySQL. 
- Node.js: Required for running the React frontend. 
- npm: Node package manager to install dependencies. 
-Setup Instructions 
-1. Install XAMPP 
-Download and install XAMPP from https://www.apachefriends.org/index.html. Make sure Apache and 
-MySQL services are running. 
-2. Setup the Database 
- Open phpMyAdmin: Navigate to http://localhost/phpmyadmin in your web browser. 
- Import the Database: 
- Create a new database. 
- Go to the "Import" tab. 
- Upload the provided .sql file to create the necessary tables and data. 
-3. Configure the Backend 
-Add PHP Files: 
-Place the provided PHP files into the htdocs directory of your XAMPP installation (usually found at 
-C:\xampp\htdocs or /Applications/XAMPP/htdocs). 
-4. Setup the Frontend 
- Navigate to the Frontend Directory: 
-Open a terminal or command prompt. 
-Change the directory to where your React frontend code is located. 
- Install Node Modules: 
-Run npm install to install all necessary dependencies.
- Start the Development Server: 
-Execute npm start to start the React development server. 
-5. Access the Application 
-Frontend: Open your web browser and navigate to http://localhost:3000 (or the port specified by 
-React). 
-Backend: Access PHP endpoints via http://localhost/your-php-file.php. 
-Troubleshooting 
-Database Connection Issues: Ensure that your database credentials in the PHP files match those of the 
-database created in phpMyAdmin. 
-Frontend Not Loading: Make sure that npm start is running and no other process is using the same port. 
+Welcome to WebDevG02, a full-stack web application designed to showcase the integration of modern frontend and backend technologies. This project demonstrates how React, PHP, and MySQL can be combined to create a dynamic and responsive web application.
+
+## Table of Contents
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Setup Instructions](#setup-instructions)
+- [Running the Application](#running-the-application)
+- [Common Issues and Solutions](#common-issues-and-solutions)
+- [Contributors](#contributors)
+
+## Overview
+WebDevG02 is a comprehensive web application that provides a platform for managing various web-based operations. Built using React for the frontend, PHP for backend development, and MySQL for database management, this project serves as an excellent foundation for developers to understand the integration of these technologies.
+
+## Technologies Used
+- **React**: For building a responsive and interactive user interface.
+- **PHP**: Server-side scripting language used to handle backend logic.
+- **MySQL**: Database management system for storing and managing data.
+- **XAMPP**: A cross-platform web server solution stack package that includes Apache, MySQL, and PHP.
+- **Node.js & npm**: JavaScript runtime and package manager for running the React frontend and managing dependencies.
+## Getting Started
+Before you begin, ensure you have the necessary software installed:
+
+- **XAMPP**: [Download here](https://www.apachefriends.org/index.html)
+- **Node.js & npm**: [Download here](https://nodejs.org/)
+
+## Setup Instructions
+Follow these steps to set up the development environment:
+
+1. **Install XAMPP**
+   - Download and install XAMPP from the official website.
+   - Open the XAMPP Control Panel and start the Apache and MySQL services.
+
+2. **Set Up the Database**
+   - Open phpMyAdmin by navigating to http://localhost/phpmyadmin.
+   - Create a new database:
+     - Click on "New" in the sidebar.
+     - Name your database (e.g., `webdevg02_db`).
+     - Go to the "Import" tab and upload the provided .sql file to set up the tables and initial data.
+
+3. **Configure the Backend**
+   - Copy all provided PHP files into the `htdocs` directory of your XAMPP installation (e.g., `C:\xampp\htdocs` or `/Applications/XAMPP/htdocs`).
+   - Update the database connection settings in your PHP files:
+     ```php
+     $servername = "localhost";
+     $username = "root"; // Default XAMPP username
+     $password = ""; // Default XAMPP password is empty
+     $dbname = "webdevg02_db"; // Your database name
+     ```
+
+4. **Set Up the Frontend**
+   - Open a terminal or command prompt.
+   - Navigate to the directory containing your React frontend code:
+     ```bash
+     cd path/to/your/react-frontend
+     ```
+   - Install the necessary dependencies:
+     ```bash
+     npm install
+     ```
+
+## Running the Application
+1. **Start Backend Services**
+   - Ensure Apache and MySQL are running in the XAMPP Control Panel.
+
+2. **Start the Frontend Server**
+   - In your terminal, run:
+     ```bash
+     npm start
+     ```
+   - Open your web browser and navigate to http://localhost:3000 to view the frontend.
+
+3. **Access Backend Endpoints**
+   - Access your PHP backend via http://localhost/your-php-file.php.
+
+## Common Issues and Solutions
+- **Cannot Connect to Database**: Double-check your database credentials and ensure the MySQL service is running.
+- **Frontend Not Loading**: Ensure `npm start` is running and that no other process is using the same port. If needed, change the port number in the React app’s configuration.
+
+## Contributors
+This project was developed by Group 02 for educational purposes in the Web Applications Development course.
+
+**Team Members:**
+- Member 1
+- Member 2
+- Member 3
+- Member 4
