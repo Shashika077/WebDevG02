@@ -1,0 +1,116 @@
+.admin-panel {
+    border: solid rgb(152, 202, 220) 5px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+table {
+    border: solid rgb(223, 224, 224) 3px;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 3px solid rgb(223, 224, 224);
+    padding: 12px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Styles for approve button */
+.abutton {
+    background-color: rgb(23, 202, 65); /* Green */
+    color: white; /* Text color */
+    cursor: pointer;
+    padding: 10px 15px; /* Adjust padding */
+    border-radius: 5px;
+    display: inline-flex;
+    border: none; /* Remove default border */
+    margin-right: 10px; /* Space between buttons */
+    font-size: 14px; /* Font size */
+}
+
+/* Styles for decline button */
+.dbutton {
+    background-color: rgb(202, 23, 23); /* Red */
+    color: white; /* Text color */
+    cursor: pointer;
+    padding: 10px 15px; /* Adjust padding */
+    border-radius: 5px;
+    display: inline-flex;
+    border: none; /* Remove default border */
+    font-size: 14px; /* Font size */
+}
+
+/* Common button hover effect */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .admin-panel {
+        padding-left: 30px;
+    }
+
+    table {
+        width: 90%; /* Adjust table width for medium screens */
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px; /* Adjust font size for medium screens */
+    }
+
+    .abutton, .dbutton {
+        padding: 8px 12px;
+        font-size: 12px; /* Adjust font size for buttons */
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-panel {
+        padding-left: 20px;
+        padding-bottom: 15px;
+    }
+
+    table {
+        width: 100%; /* Full width for small screens */
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px; /* Adjust font size for small screens */
+    }
+
+    .abutton, .dbutton {
+        padding: 6px 10px;
+        font-size: 10px; /* Adjust font size for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-panel {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    table {
+        font-size: 10px; /* Adjust font size for table text */
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .abutton, .dbutton {
+        padding: 5px 8px;
+        font-size: 8px; /* Adjust font size for buttons */
+    }
+}
