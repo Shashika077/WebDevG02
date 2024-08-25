@@ -1,0 +1,128 @@
+.list-table {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 3px solid #d1e76d; /* Horizontal line between rows */
+  position: relative;
+  gap: 10px; /* Space between grid items (columns) */
+  border-right: solid #d1e76d;
+  border-left: solid #d1e76d;
+  border-radius: 5px;
+}
+
+.list-table-format.title {
+  background-color: #d1e76d;
+  font-weight: bold;
+  border-bottom: 2px solid #a3b029; /* Thicker line for the header row */
+}
+
+.list-table-format > div {
+  padding: 0 10px; /* Space between content and border */
+}
+
+.list-table-format img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.list-table-format p, .list-table-format button {
+  margin: 0;
+}
+
+.list-table-format.title b {
+  font-size: 16px;
+  color: black;
+}
+
+.list-table-format p {
+  font-size: medium;
+}
+
+.cursor {
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cursor:hover {
+  background-color: #e2e6ea;
+  border-color: #ccc;
+}
+
+.list-add-flex-col p {
+  margin-left: 80px;
+  font-weight: 700;
+}
+
+.list-add-flex-col {
+  border: solid rgb(152, 202, 220) 5px;
+  border-radius: 10px; /* Optional: Add rounded corners to the border */
+  padding: 10px; /* Add padding inside the container */
+}
+
+.list-table-format button {
+  margin-right: 10px;
+  padding: 5px 10px; /* Adjusted padding for better appearance */
+  color: rgb(11, 11, 11);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonx{
+  display: flex;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .list-table-format {
+    grid-template-columns: repeat(4, 1fr); /* Reduce columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .list-table-format {
+    grid-template-columns: repeat(2, 1fr); /* Reduce columns for smaller screens */
+    padding: 10px; /* Reduce padding */
+    gap: 5px; /* Reduce gap between items */
+  }
+
+  .list-add-flex-col p {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .list-table-format img {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px; /* Maintain aspect ratio */
+  }
+
+  .list-table-format p {
+    font-size: small; /* Adjust font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .list-table-format {
+    grid-template-columns: 1fr; /* Single column layout for very small screens */
+  }
+
+  .list-add-flex-col p {
+    margin-left: 0; /* Remove margin */
+    text-align: center; /* Center text */
+  }
+
+  .list-table-format img {
+    width: 60px; /* Further adjust image size */
+    height: 60px; /* Maintain aspect ratio */
+  }
+}
