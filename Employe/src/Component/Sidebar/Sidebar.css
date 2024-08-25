@@ -1,0 +1,45 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar {
+  width: 100%; /* Adjusted to fit within container */
+  min-height: 20vh;
+  background-color: rgb(218, 235, 229);
+  font-size: max(1vw, 18px);
+  margin-top: 2px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  display: flex; /* Ensure flexbox for vertical centering */
+  align-items: center; /* Center items vertically */
+  border-radius: 5px;
+}
+
+.side-bar-option {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding: 10px 0; /* Add vertical padding if needed */
+  text-decoration: none; /* Remove underline from text */
+  color: inherit; /* Ensure text color matches */
+}
+
+.side-bar-option.active {
+  background-color: rgb(252, 252, 252);
+  border-color: tomato;
+  border-radius: 5px;
+}
+
+.dash,
+.product,.sell-r{
+  width: 80px;
+  height: auto; /* Maintain aspect ratio */
+  padding: 33px 25px;
+}
+
+.side-bar-text {
+  margin: 0; /* Remove default margin */
+  font-size: max(1vw, 18px); /* Match text size with sidebar */
+  font-weight: 600;
+}

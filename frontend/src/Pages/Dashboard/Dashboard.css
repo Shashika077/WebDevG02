@@ -1,0 +1,123 @@
+/* Container for the dashboard cards */
+.dashboard {
+  display: flex; 
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  gap: 20px; /* Space between cards */
+  padding: 5px; /* Padding around the container */
+}
+
+/* Style for individual dashboard card */
+.dashboard-content1 {
+  width: calc(25% - 20px); /* Adjust width and subtract gap */
+  min-height: 15vh; /* Minimum height of the card */
+  background-color: rgb(242, 245, 244);
+  font-size: max(1vw, 18px);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  display: flex; 
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Style for image */
+.reve {
+  width: 60px;
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Container for text elements */
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  justify-content: center; /* Center text vertically within the container */
+}
+
+/* Style for individual text elements */
+.dashboard-text {
+  margin: 0;
+  font-size: max(1vw, 18px);
+}
+
+.dashboard-text1 {
+  margin: 0;
+  margin-top: 6px;
+  font-size: max(1vw, 18px);
+  font-weight: bold; /* Make the amount stand out */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.top-selling-items{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* Adjust width for responsive layout */
+}
+.expense-chart {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 490px;
+  margin-left: 20px;
+} 
+.chart-container1{
+  margin-bottom: 20px;
+  width: 58%;
+  display: flex;
+  justify-content: end; 
+  align-items: center; 
+  margin-left: 100px;
+  height: 77.5%;
+}
+.chart-container {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; }
+
+canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List styles for top items */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-content1 {
+      width: calc(50% - 20px); /* Adjust for smaller screens */
+  }
+
+  .top-selling-items,
+  .expense-chart {
+      width: calc(100% - 20px); /* Full width for smaller screens */
+  }
+}
+.main1{
+  display: flex;
+}
+.download-button{
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: red;
+  font-weight: 600;
+}

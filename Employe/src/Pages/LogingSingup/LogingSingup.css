@@ -1,0 +1,149 @@
+.LogingSingup-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 40vw; 
+  margin: auto; 
+  margin-top: 10px;
+  background-color: rgb(247, 248, 250);
+  padding: 20px; 
+  box-sizing: border-box; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for signup text */
+.singup {
+  color: rgb(7, 7, 7);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 0; 
+  margin-bottom: 50px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column; 
+  width: 60%; 
+  font-size: larger;
+}
+
+/* Input field styling */
+input {
+  margin-bottom: 20px; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 100%;
+}
+
+input:last-of-type {
+  margin-bottom: 10px; /* Added unit px */
+}
+
+/* Span styling */
+.span {
+  color: tomato;
+  cursor: pointer;
+  display: inline; /* Ensures span elements stay on one line */
+  margin: 0; /* Adjust if necessary */
+}
+
+/* Paragraph styling */
+p {
+  white-space: nowrap; /* Prevents line breaks within the paragraph */
+}
+
+/* Button styling */
+.button1 {
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.button1:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+}
+
+/* User type section styling */
+.user-type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+/* User type button styling */
+.user-type-button {
+  background-color: #4087d3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+}
+
+.user-type-button.active {
+  border: 3px solid rgb(6, 6, 6);
+  background-color: #2a0d9d;
+}
+
+.user-type-button:hover {
+  background-color: #3066d1; /* Slightly lighter blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .LogingSingup-container {
+    width: 60vw; /* Increase width for medium screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  form {
+    width: 70%; /* Adjust form width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .LogingSingup-container {
+    width: 80vw; /* Increase width for smaller screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  form {
+    width: 80%; /* Adjust form width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .LogingSingup-container {
+    width: 90vw; /* Increase width for very small screens */
+    padding: 5px; /* Adjust padding */
+  }
+
+  form {
+    width: 90%; /* Adjust form width for very small screens */
+  }
+
+  .button1 {
+    font-size: 14px; /* Smaller font size for very small screens */
+  }
+
+  .user-type-button {
+    font-size: 14px; /* Smaller font size for very small screens */
+  }
+}
