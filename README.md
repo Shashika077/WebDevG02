@@ -83,7 +83,11 @@ Follow these steps to set up the development environment:
 This project was developed by Group 02 for educational purposes in the Web Applications Development course.
 
 **Team Members:**
-- Member 1
-- Member 2
-- Member 3
-- Member 4
+- [Shashika](https://github.com/Shashika077)
+- [Venuja](https://github.com/VenujaVP)
+- [Kavisha](https://github.com/KavishaLP)
+- [Prasan](https://github.com/malinthagithub)
+- [Zahri](https://github.com/Zahri-Affa)
+- [Lakshitha](https://github.com/Lakshitha0530)
+- [Sandeepani](https://github.com/SandeepaniIshara)
+- [Lakma](https://github.com/lakma1090)
